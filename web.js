@@ -7,9 +7,10 @@ app.use(express.logger());
 //buff = fs.readFileSync('index.html');
  
 
+var ear = 'GREAT';
 
 app.get('/', function(request, response) {
-    response.send('GREAT');
+    response.send(ear);
 });
 
 var port = process.env.PORT || 5000;
