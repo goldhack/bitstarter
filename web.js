@@ -7,7 +7,7 @@ app.use(express.logger());
 //buff = fs.readFileSync('index.html');
  
 
-var ear = 'GREAT';
+var ear = 'GREATER';
 
 app.get('/', function(request, response) {
     response.send(ear);
