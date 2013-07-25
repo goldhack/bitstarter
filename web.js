@@ -2,9 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-//var buff = fs.readFileSync('index.html', 'utf8');
- 
-
+var buff = fs.readFileSync('`~/bitstarter/index.html', 'utf-8');
 var ear = buff.toString('utf-8',0,50);
 
 app.get('/', function(request, response) {
