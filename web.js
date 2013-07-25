@@ -10,7 +10,7 @@ buff = fs.readFileSync('index.html');
 var ear = buff.toString('utf-8',0,50);
 
 app.get('/', function(request, response) {
-    response.send(ear);
+    response.send('Henry');
 });
 
 var port = process.env.PORT || 5000;
