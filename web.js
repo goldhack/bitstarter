@@ -3,8 +3,8 @@ var app = express();
 app.use(express.logger());
 
 
-var buff = new Buffer(50);
-buff = fs.readFileSync('index.html');
+
+var buff = fs.readFileSync('./index.html', 'utf8');
  
 
 var ear = buff.toString('utf-8',0,50);
